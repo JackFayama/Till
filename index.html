@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Till Balance UI</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+      background-color: #0F3D2F;
+      color: white;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .avatar {
+      background-color: white;
+      color: #0F3D2F;
+      font-weight: bold;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    .text-info {
+      line-height: 1.2;
+    }
+    .text-info .name {
+      font-weight: bold;
+    }
+    .text-info .subtitle {
+      font-size: 14px;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .actions div {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .balance-card {
+      margin-top: 20px;
+      padding: 16px;
+      background-color: #1D4F3E;
+      border-radius: 12px;
+      position: relative;
+      border-left: 4px solid #00FF7F;
+    }
+    .balance-card .label {
+      color: #00FF7F;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .balance-card .amount {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .balance-card .amount .icon-eye {
+      width: 20px;
+      height: 20px;
+      background: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4.5C7 4.5 2.73 8.11 1 12c1.73 3.89 6 7.5 11 7.5s9.27-3.61 11-7.5c-1.73-3.89-6-7.5-11-7.5zm0 13a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>') no-repeat center;
+      background-size: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <div class="user-info">
+      <div class="avatar">JA</div>
+      <div class="text-info">
+        <div class="name">NOVA PRIME</div>
+        <div class="subtitle">JACOB AMAITS<sup>👋</sup></div>
+      </div>
+    </div>
+    <div class="actions">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="balance-card">
+    <div class="label">TILL BALANCE</div>
+    <div class="amount">
+      <span>KSH 2.99</span>
+      <div class="icon-eye"></div>
+    </div>
+  </div>
+</body>
+</html>
